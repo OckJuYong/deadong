@@ -1,0 +1,43 @@
+
+  
+  .ddd {
+    position: relative;
+    width: 1700px;
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+  
+  input {
+    font-size: 15px;
+    color: #222222;
+    width: 300px;
+    border: none;
+    border-bottom: solid #aaaaaa 1px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    position: relative;
+    background: none;
+    z-index: 5;
+  }
+  
+  input::placeholder { color: #aaaaaa; }
+  input:focus { outline: none; }
+  
+
+  
+  .main {
+    position: absolute;
+    color: #000000;
+    left: 80px;
+    font-size: 20px;
+    bottom: 8px;
+    transition: all .2s;
+  }
+  
+  input:focus ~ label, input:valid ~ label {
+    font-size: 16px;
+    bottom: 40px;
+    color: #666;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,58 @@
+.main_container {
+    display: flex; /* Flexbox를 사용하여 요소를 가로로 정렬합니다. */
+    justify-content: center; /* 가로 방향으로 중앙 정렬합니다. */
+    align-items: center; /* 세로 방향으로 중앙 정렬합니다. */
+    height: 97.5vh; /* 화면 전체 높이를 차지하도록 설정합니다. */
+    background-image: url('./img/computer_back.png'); /* 배경 이미지 설정 */
+    background-size: cover; /* 배경 이미지를 컨테이너에 맞게 조절합니다. */
+  }
+  
+  .main_logo {
+    width: 800px
+  }
+
+
+  .realmain_container {
+    overflow: hidden;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 97.9vh; 
+    background-image: url('./img/computer_back.png'); 
+    background-size: cover;
+  }
+
+  .main_logo_left {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .npc_img {
+    position: absolute;
+    bottom: 0;
+    width: 700px;
+    left: -50px;
+  }
+
+  .message {
+    position: absolute;
+    width: 1000px;
+    top: 80px;
+  }
+
+  .npc_name {
+    position: absolute;
+    top: 160px;
+    left: 355px;
+    font-size: 25px;
+    color: white;
+  }
+
+  .npc_message_container {
+    position: absolute;
+    font-size: 40px;
+    top: 215px;
+    left: 400px;
+  }
+  

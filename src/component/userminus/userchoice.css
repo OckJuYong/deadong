@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Fuggles&family=Jua&display=swap');
+
+
+body {
+    background-image: url('../img/computer_back.png'); 
+    background-size: cover;
+    font-family: jua;
+}
+  .choice_input {
+    position: relative;
+    width: 1700px;
+    margin-left: 200px;
+    margin-top: 5%;
+  }
+  
+  input {
+    font-size: 35px;
+    color: #222222;
+    width: 40%;
+    border: none;
+    border-bottom: solid #aaaaaa 1px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    position: relative;
+    background: none;
+    z-index: 5;
+  }
+  
+  input::placeholder { color: #aaaaaa; }
+  input:focus { outline: none; }
+  
+
+  
+  .main {
+    position: absolute;
+    color: #000000;
+    left: 8px !important;
+    font-size: 40px !important;
+    bottom: 8px;
+    transition: all .2s;
+  }
+  
+  input:focus ~ label, input:valid ~ label {
+    font-size: 36px !important;
+    bottom: 60px !important;
+    color: #666;
+    font-weight: bold;
+  }
+
+  .cho_btn {
+    position: absolute;
+    top: 60px;
+    font-size: 50px;
+    right: 70px;
+    border-radius: 100px;
+    background-color: antiquewhite;
+    border: none;
+    padding: 20px;
+  }
+  .neoguri {
+    width: 700px;
+    height: auto;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .choice_input {
+    display: flex;
+    flex-direction: row;
+}
+
+.type_choice {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+}
+
+.A_btn,
+.O_btn {
+    margin-top: 13px ;
+    margin-right: 20px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.A_btn input[type='radio'],
+.O_btn input[type='radio'] {
+    transform: scale(2.0) !important; 
+    margin-right: 200px; 
+}
+
+.A_title {
+    margin-left: -3%;
+    margin-top: 30px;
+}
+
+.O_title {
+    margin-left: 3%;
+    margin-top: 30px;
+}
+
+.Type_main {
+    font-size: 40px;
+}
+
+.hobby {
+    position: absolute;
+    font-size: 30px;
+    right: 30%;
+}
+
+.hobby_title_name {
+    position: absolute;
+    top: 8%;
+    right: 17%;
+    font-size: 40px;
+}
+
+.hobby_0 {
+    margin-top: 0vh;
+}
+.hobby_1 {
+    margin-top: 10vh;
+}
+.hobby_2 {
+    margin-top: 20vh;
+}
+.hobby_3 {
+    margin-top: 30vh;
+}
+.hobby_4 {
+    margin-top: 40vh;
+}
+
+.gender_choice {
+    display: flex;
+    flex-direction: row;
+    margin-left: 14.5%;
+}
+
+.M_btn,
+.F_btn {
+    margin-right: -15px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.M_btn input[type='radio'],
+.F_btn input[type='radio'] {
+    transform: scale(2.0);
+    margin-right: 200px; 
+}
+
+.M_title {
+    margin-left: 8px;
+    margin-top: 20px;
+}
+
+.F_title {
+    margin-left: -16px;
+    margin-top: 20px;
+}
