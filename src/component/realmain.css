@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Fuggles&family=Jua&display=swap');
 
+body {
+    font-family: jua;
+}
 
 .test {
     width: 1050px;
@@ -84,4 +87,15 @@
 
     font-size: 70px;
     font-family: Jua;
+}
+
+.cho_btn {
+    font-family: jua;
+    width: 400px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.cho_btn:hover {
+    transform: translateY(-10px);
 }

@@ -1,20 +1,19 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Fuggles&family=Jua&display=swap');
-
-
+/* userchoice.css */
 body {
     background-image: url('../img/computer_back.png'); 
     background-size: cover;
     font-family: jua;
 }
-  .choice_input {
+
+.choice_input {
     position: relative;
     width: 1700px;
     margin-left: 200px;
     margin-top: 5%;
-  }
-  
-  input {
+    z-index: 1;
+}
+
+input {
     font-size: 35px;
     color: #222222;
     width: 40%;
@@ -24,31 +23,30 @@ body {
     padding-left: 10px;
     position: relative;
     background: none;
-    z-index: 5;
-  }
-  
-  input::placeholder { color: #aaaaaa; }
-  input:focus { outline: none; }
-  
+    z-index: 1;
+}
 
-  
-  .main {
+input::placeholder { color: #aaaaaa; }
+input:focus { outline: none; }
+
+.main {
     position: absolute;
     color: #000000;
     left: 8px !important;
     font-size: 40px !important;
     bottom: 8px;
     transition: all .2s;
-  }
-  
-  input:focus ~ label, input:valid ~ label {
+    z-index: 1;
+}
+
+input:focus ~ label, input:valid ~ label {
     font-size: 36px !important;
     bottom: 60px !important;
     color: #666;
     font-weight: bold;
-  }
+}
 
-  .cho_btn {
+.cho_btn {
     position: absolute;
     top: 60px;
     font-size: 50px;
@@ -57,16 +55,19 @@ body {
     background-color: antiquewhite;
     border: none;
     padding: 20px;
-  }
-  .neoguri {
-    width: 700px;
+    z-index: 1;
+}
+
+.neoguri {
+    width: 900px;
     height: auto;
     position: absolute;
     right: 10px;
     top: 10px;
-  }
+    z-index: 1;
+}
 
-  .choice_input {
+.choice_input {
     display: flex;
     flex-direction: row;
 }
@@ -89,6 +90,7 @@ body {
 .O_btn input[type='radio'] {
     transform: scale(2.0) !important; 
     margin-right: 200px; 
+    z-index: 1;
 }
 
 .A_title {
@@ -121,15 +123,19 @@ body {
 .hobby_0 {
     margin-top: 0vh;
 }
+
 .hobby_1 {
     margin-top: 10vh;
 }
+
 .hobby_2 {
     margin-top: 20vh;
 }
+
 .hobby_3 {
     margin-top: 30vh;
 }
+
 .hobby_4 {
     margin-top: 40vh;
 }
@@ -151,6 +157,7 @@ body {
 .F_btn input[type='radio'] {
     transform: scale(2.0);
     margin-right: 200px; 
+    z-index: 1;
 }
 
 .M_title {
@@ -161,4 +168,53 @@ body {
 .F_title {
     margin-left: -16px;
     margin-top: 20px;
+}
+
+.Modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    padding: 20px;
+    border: none;
+    width: 50%;
+    height: 70%;
+    max-width: 80%;
+    z-index: 10; /* 모달의 z-index를 높게 설정 */
+}
+
+.Overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9; /* 모달 배경 오버레이의 z-index를 모달보다 낮게 설정 */
+}
+
+.border_container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.modal_sub_container {
+    position: absolute;
+    top: 24%;
+    left: 13%;
+    width: 70%;
+    height: 48%;
+    background: #DDAB79;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 25px;
+}
+
+.close_btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
 }

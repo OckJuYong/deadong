@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './userchoice.css';
 import nugeori from '../img/neoguri.png';
+import Modal from 'react-modal';
+
+import borderBox from '../img/border.png';
+
+Modal.setAppElement('#root');
 
 const UserChoice = () => {
     const [userData, setUserData] = useState({
@@ -12,6 +17,9 @@ const UserChoice = () => {
         keyword: ""
     });
     const [errors, setErrors] = useState({});
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+
+    const [findUser, setFindUser] = useState([]);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -50,14 +58,12 @@ const UserChoice = () => {
             // 에러가 없으면 서버에 POST 요청을 보냄
             if (Object.keys(newErrors).length === 0) {
                 console.log(userData);
-                const response = await axios.post('http://15.164.101.123/register/', userData);
+                const response = await axios.post('http://15.164.101.123/find/visitors/', userData);
                 console.log(response.data);
                 if (response.status === 200) {
                     console.log('정보를 성공적으로 받아왔습니다.');
-                    alert("매칭 되었습니다!");
-                    window.location.href = ("http://localhost:3000/");
-                    
-
+                    setFindUser(response.data);
+                    setModalIsOpen(true);  
                 } else {
                     console.error('정보를 받아오지 못했습니다.');
                 }
@@ -66,9 +72,15 @@ const UserChoice = () => {
                 setErrors(newErrors);
             }
         } catch (error) {
-            alert("매칭된 사람이 없습니다...")
+            alert("매칭된 사람이 없습니다...");
             console.error('서버 요청 중 오류가 발생했습니다.', error);
         }
+    };
+
+    const closeModal = () => {
+        setModalIsOpen(false);
+
+        window.location.href = "http://localhost:3000/"
     };
 
     return (
@@ -112,11 +124,40 @@ const UserChoice = () => {
                 </div>
                 <div className='choice_input'>
                     <input type="text" name="keyword" value={userData.keyword} onChange={handleChange} />
-                    <label className='main'>취미</label>
+                    <label className='main_hobby'>취미</label>
                 </div>
                 <img src={nugeori} alt="Computer Logo" className='neoguri'/>
                 <button type="submit" className='cho_btn'>주민 불러오기</button>
             </form>
+
+            <div className='modal_main_container'>
+            <Modal 
+                isOpen={modalIsOpen} 
+                onRequestClose={closeModal} 
+                contentLabel="Success Modal"
+                className="Modal"
+                overlayClassName="Overlay"
+            >
+                <img src={borderBox} alt="Computer Logo" className='border_container'>
+                    
+                </img>
+                <div className='modal_sub_container'>
+                    <button onClick={closeModal} className='close_btn'>X</button>
+
+                    <h2>매칭 되었습니다!</h2>
+                    <div>닉네임 : {findUser.nickname}</div>
+                    <br/>
+                    <div>나이 : {findUser.age}</div>
+                    <br/>
+                    <div>취미 : {findUser.hobby}</div>
+                    <br/>
+                    <div>연락처 : {findUser.instagram_id}</div>
+                    <br/>
+                </div>
+
+            </Modal>
+            </div>
+
         </div>
     );
 }
