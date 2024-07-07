@@ -4,8 +4,9 @@
 
 <h3>사용된 기술스택</h3>
 
-![Figma](https://cdn-url-to-figma-icon.com/figma-icon.png)
-![Django](https://cdn-url-to-django-icon.com/django-icon.png)
-![React](https://cdn-url-to-react-icon.com/react-icon.png)
-
-<img src="https://img.shields.io/badge/Figma?style=for-the-badge&logo=Figma&logoColor=white">
+  <img src="https://img.shields.io/badge/figma-F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" />&nbsp;
+  <img src="https://img.shields.io/badge/react-20232a.svg?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />&nbsp;
+  <img src="https://img.shields.io/badge/javascript-F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=20232a" alt="JavaScript" />&nbsp;
+  <img src="https://img.shields.io/badge/html5-E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />&nbsp;
+  <img src="https://img.shields.io/badge/css3-1572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />&nbsp;
+  <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" />&nbsp;
