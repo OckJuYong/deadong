@@ -8,3 +8,4 @@
 ![Django](https://cdn-url-to-django-icon.com/django-icon.png)
 ![React](https://cdn-url-to-react-icon.com/react-icon.png)
 
+<img src="https://img.shields.io/badge/Figma?style=for-the-badge&logo=Figma&logoColor=white">
