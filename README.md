@@ -12,4 +12,4 @@
   <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" />&nbsp;
 
 
-<img src="https://github.com/OckJuYong/deadong/issues/1#issue-2394120211" alt="figma"/>
+<img src="https://github.com/OckJuYong/deadong/issues/1#issue-2394120211" alt="figma"/>&nbsp;
