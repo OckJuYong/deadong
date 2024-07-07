@@ -10,3 +10,6 @@
   <img src="https://img.shields.io/badge/html5-E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />&nbsp;
   <img src="https://img.shields.io/badge/css3-1572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />&nbsp;
   <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" />&nbsp;
+
+
+<img src="https://github.com/OckJuYong/deadong/issues/1#issue-2394120211" alt="figma"/>
